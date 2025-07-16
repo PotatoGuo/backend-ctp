@@ -35,6 +35,7 @@ else()
     find_library(HIREDIS hiredis)
     find_library(REDIS++ redis++)
     # find_library(LINUXDATACOLLECT LinuxDataCollect)
+    message(STATUS "项目根目录: ${CMAKE_SOURCE_DIR}")  # 顶层CMakeLists.txt所在目录
     set(LINUXDATACOLLECT "./api/linux/libLinuxDataCollect.so")
     # find_library(MDAPI thostmduserapi)
     set(MDAPI "./api/linux/libthostmduserapi.so")
