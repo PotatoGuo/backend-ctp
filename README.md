@@ -27,6 +27,7 @@ Linux
   
 * 注意：
   - 本项目编译需要至少g++12以上，本人测试环境：ubuntu20自带g++9.4是无法编译的，因此要安装一个g++13，并指定cmake -DCMAKE_CXX_COMPILER=/usr/bin/g++-13。编译脚本已经写在biuld.sh中
+  - cmake版本也要更新，至少3.5以上
   - CMakeLists.txt已经修改，依赖包地址改成绝对地址（本人测试find_library api下的包找不到，折腾一下懒得搞了，cmake没怎用过）
 
 Windows
