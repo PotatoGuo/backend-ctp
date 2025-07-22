@@ -55,6 +55,7 @@ int main([[maybe_unused]] int argc, [[maybe_unused]] char **argv) {
     mkdir( trade_path.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH );
     cout << format("config-file: {}", config_path) << endl;
     cout << format("log-file: {}/backend-ctp.log", log_path) << endl;
+    cout << format("try to open log-file: {}/backend-ctp.log", log_path) << endl;
     ifstream ifs(config_path);
 #endif
     string line, key, split, val;
