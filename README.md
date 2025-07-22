@@ -24,6 +24,8 @@ Linux
 * 编译后的执行程序 backend-ctp 位于/usr/local/bin 目录下
 * 参考config-example.ini，在"~/.config/backend-ctp/"目录下新建config.ini，
   填入服务器的ip和mac地址、修改相关配置项。
+  
+* 注意：本项目编译需要至少g++12以上，本人测试环境：ubuntu20自带g++9.4是无法编译的，因此要安装一个g++13，并指定cmake -DCMAKE_CXX_COMPILER=/usr/bin/g++-13。编译脚本已经写在biuld.sh中
 
 Windows
 -------
