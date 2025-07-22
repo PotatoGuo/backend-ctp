@@ -56,6 +56,10 @@ int main([[maybe_unused]] int argc, [[maybe_unused]] char **argv) {
     cout << format("config-file: {}", config_path) << endl;
     cout << format("log-file: {}/backend-ctp.log", log_path) << endl;
     ifstream ifs(config_path);
+    if (!ifs.is_open()) {
+        std::cerr << "Failed to open file: " << config_path << std::endl;
+        return 1;
+    }
 #endif
     string line, key, split, val;
     map<string, string> config;
